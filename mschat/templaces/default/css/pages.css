@@ -1,0 +1,19 @@
+.text{
+	padding:15px;
+}
+.text li{
+	margin: 10px 0;
+}
+.date{
+	color:#666;
+	font-size:11px;
+}
+.author{
+	color:#888;
+	font-size:11px;
+	text-align: right;
+}
+.statistic-url{
+	position:relative;
+	margin:10px;
+}

@@ -1,0 +1,988 @@
+#m_left{
+	position:relative !important;
+}
+#m_right{
+	margin-left:0px !important;
+}
+#photo{
+	padding:20px 0;
+	height:300px;
+	border:1px solid #384772;
+	border-top:none;
+	background-color:#ffffff;
+	text-align:center;
+}
+.img_user{
+	border-radius:2px;
+	margin:2px;
+}
+/*окно просмотра фотографий*/
+#photoview{
+	display:none;
+	position:absolute;
+	top:20px;
+	left:50%;
+	width:900px;
+	z-index:11;
+	margin-left:-450px;
+	background-color:#000;
+	border:1px solid #232323;
+}
+#viev_left{
+	float:left;
+	width:600px;
+	text-align:center;
+	height:630px;
+	background-image: url(../images/loadin.gif);
+	background-repeat: no-repeat;
+	background-position: 50% 230px;
+	
+}
+#view_right{
+	background-color:#fff;
+	float:left;
+	width:300px;
+	height:630px;
+}
+#viewimg{
+	margin:10px 0 0 0;
+	margin-top:10px;
+	max-height:580px;
+	max-width:580px;
+	min-height:270px;
+	min-width:200px;
+	border:none;
+}
+#photo_view{
+	height:595px;
+	width:900px;
+	text-align:center;
+}
+.img-holder{
+	display:table-cell;
+	vertical-align:middle;
+}
+#closeBox{
+	text-align:right;
+}
+#closeBoxHidden{
+	display:none;
+	position:absolute;
+	margin-left:856px;
+	text-align:right;
+	z-index:13;
+}
+#view_author_text{
+	padding:5px;
+	width:300px;
+	margin-top:-15px;
+}
+
+.viewphoto{
+	min-height:400px;
+	min-width:500px;
+}
+.viev_author,.viev_date,.viev_text,.viev_name{
+	float:left;
+}
+.viev_date,.viev_text,.viev_name{
+	width:230px;
+	margin-left:8px !important;	
+	overflow-x:hidden;
+}
+.viev_name{
+	cursor:pointer;
+	font-size:11px;
+	width:230px;
+	color:#aaa;
+}
+.viev_gotoalbom{
+	margin-top:4px;
+	margin-bottom:4px;
+	font-size:11px;
+	color:#aaa;
+}
+.viev_date{
+	color:#808080;
+	font-size:10px;
+}
+.viev_text{
+	font-size:11px;
+	width:280px;
+	height:28px;
+	overflow-y:hidden;
+}
+.allTextPhotoOff{
+float:left;
+margin:5px;
+text-decoration:underline;
+cursor:pointer;
+color:#3d71b9;
+}
+.viev_text_reserv{
+	font-size:11px;
+	width:280px;
+	overflow-x:hidden;
+	margin-left:8px;
+}
+.allTextPhoto{
+	color:#134657;
+	cursor:pointer;
+}
+.allTextPhoto:hover{
+	color:#000;
+}
+.view_head{
+	width:290px;
+	background-color:#777;
+	float:left;
+	padding:5px;
+	margin: 5px 0;
+	border-top:1px solid #242424;
+	color:white;	
+	text-shadow:1px 1px 1px #000, 0 0 0 #000;
+}
+#view_textarea{
+	width:230px;
+	margin:1px;
+	height:40px;
+	margin:6px 0 0 0;
+	border:1px solid #ccc;
+	color:#ccc;
+	font-family:verdana;
+	font-size:12px;
+}
+
+.view_form_textarea{
+	float:left;
+	margin-bottom:0;
+}
+#view_form{
+	background-image: url('../images/ten.png');
+	background-position:top;
+	background-repeat: repeat-x;
+	width:300px;
+	min-height:3px;
+	float:left;
+}
+.tenl{
+	background-image: url('../images/ten.png');
+	background-position:top;
+	background-repeat: repeat-x;
+	width:100%;
+	height:2px;
+	float:left;
+	position:absolute;
+	z-index:3;
+	margin-top:-6px;
+}
+.viev_form_author{
+	margin:5px;
+	float:left;
+}
+.view_top_butt{
+	padding:7px 8px 5px 5px;
+}
+.view_top_butt:hover{
+	background-color:#e7ecff;
+}
+#prev2, #next2{
+	height:500px;
+	margin:0;
+	width:100px;
+	background-repeat:no-repeat ;
+	background-position: center;
+	cursor:pointer;
+	border-radius:10px;
+	position:absolute;
+}
+#prev2{
+	background-image: url(../images/prev2.png);
+	margin-left:-20px;
+}
+#prev2:hover{
+	background-image: url(../images/prev.png);
+}
+#next2{
+	background-image: url(../images/next2.png);
+	left:50%;
+	margin-left:70px;
+}
+#next2:hover{
+	background-image: url(../images/next.png);
+}
+/*Кнопка редактировать фотоальбом*/
+#edit_photo_butt, #delete_photo_butt,#like_photo_butt{
+	float:right;
+}
+#edit_photo_butt{
+	cursor:pointer;
+	margin:3px 15px;
+	font-size:10px;
+}
+#nave_view{
+	float:left;
+	width:550px;
+	margin-left:-20px;
+	margin-top:5px;
+	font-weight:bold;
+}
+#like_photo_butt{
+	color:#aaa;	
+	cursor:pointer;
+	padding-left: 8px;
+}
+#like_photo_butt:hover{
+	text-decoration:underline;
+	color:#fff;	
+}
+#clike_photo_butt{
+	background-color:#292929;
+	border-radius:2px;
+	float:right;
+	padding:2px 7px;
+	cursor:pointer;
+	font-size:10px;
+	color:#bcbcbc;
+}
+#clike_photo_butt:hover{
+	background-color:#2c3b5d;
+}
+/*подгружаем комменты*/
+#comments_photo{
+	width:294px;
+	max-height:388px;
+	overflow-y:scroll ;
+	padding:3px;
+	position:absolute;
+	bottom:0;
+}
+#comments_photo_bord{
+	width:300px;
+	height:388px;
+	float:left;
+	position:relative;
+}
+.avamincommPhoto{
+	width:35px;
+	border-radius:2px;
+}
+.comAllPhoto{
+	margin:0;
+}
+.comPhotoDel:hover{
+	background-image: url('../images/closeMini50.png');
+	background-position:265px 2px;
+	background-repeat: no-repeat;
+}
+.comAvaPhoto{
+	float:left;
+	width:35px;
+	margin:1px 5px;
+	margin-top:0;
+	position:relative;
+}
+.comOnlinePhoto{
+	text-align:center;
+	font-size:10px;
+	color:#a7b4cc;
+	margin-left:-8px;
+}
+.hrphoto{
+	margin:0;
+	border-top:1px solid #ddd;
+}
+.comLoginPhoto{
+	margin:0px 2px;
+}
+.comTextPhoto{
+	margin:2px;
+	min-height:30px;
+	width:210px;
+	overflow-x:hidden;
+}
+.comDatePhoto{
+	color:#999;
+	font-size:10px;
+}
+.comEntPhoto{
+	margin-left:35px;
+	margin-top:2px;
+	padding-bottom:2px;
+}
+.comComPhoto{
+	margin:1px 3px 1px 3px;
+	font-size:11px;
+}
+.comDeletePhoto{
+	float:right;
+	margin-right:-4px;
+	width:12px;
+	height:10px;
+}
+.comDeletePhoto:hover{
+	background-image: url('../images/closeMini.png');
+	background-position:1px 2px;
+	background-repeat: no-repeat;
+}
+.navi_comm_photo_verh,.navi_comm_photo_niz{
+	width:267px;
+	margin:5px 0;
+	padding:8px;
+	cursor:pointer;
+	text-align:center;
+	background-color:#e6f1f3;
+	color:#2b646e;
+	text-shadow:1px 1px 1px #fff, 0 0 0 #fff;
+}
+.navi_comm_photo_verh{
+	margin:-3px 0px 8px -3px;
+	border-bottom:1px solid #bfd9e2;
+}
+.navi_comm_photo_niz{
+	margin:8px 0px -3px -3px;
+	border-top:1px solid #bfd9e2;
+}
+/*Конец окна просмотра фотографий*/
+.avamincomm{
+	width:50px;
+	border-radius:2px;
+}
+#m_photo{
+	text-align:center;
+	margin:10px;
+	min-height:100px;
+	width:201px;
+	background-color:white;
+	border:1px solid #ededed;
+	vertical-align:middle;
+}
+#colorbox{
+	display:none;
+	background-image: url('../images/bg_lightbox.png');
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index:11;
+}
+
+h3{
+	display:block;
+	background-color:#c5dbe7;
+	padding:4px;
+	margin:0;
+	text-align:center;
+	color: #417795;
+	font-size:12px;
+	border-top:1px solid #9ec4d4;
+}
+.str{
+	padding:5px;
+}
+.left{
+	width:50%;
+	display:block;
+	float:left;
+	margin-right:8px;
+	text-align:right;
+}
+.formtext{
+	width:90%;
+	height:25px;
+	margin:10px;
+	border:1px solid #bbb;
+	color:#888;
+	font-family:tahoma;
+	font-size:12px;
+	padding:5px;
+	border-radius:3px;
+}
+#formadd{
+	text-align:center;
+	background-color:#fff8e4;
+	border-bottom:1px solid #9ec4d4;
+	float:left;
+	width:565px;
+	margin-bottom:10px;
+	padding:10px 5px;
+}
+.formsmall{
+	text-align:left;
+	color:#808080;
+	font-size:11px;
+	width:500px;
+	overflow-x:hidden;
+	padding:5px;
+}
+.yes{
+	background-color:#88d586;
+	border:1px solid #62a261;
+	color:white;
+	margin:5px;
+	padding:5px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px black, 0 0 0 #62a261;
+}
+.no{
+	background-color:#ee6767;
+	border:1px solid #c64444;
+	color: white;
+	margin: 5px;
+	padding:5px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px black, 0 0 0 #c64444;
+}
+/*Комменты (классы потому что цыкл)*/
+.comAll{
+	margin:10px;
+}
+.comAva{
+	float:left;
+	width:60px;
+	margin:5px 5px 5px 7px;
+	margin-top:0;
+	position:relative;
+}
+.comEnt{
+	margin-left:50px;
+	margin-top:10px;
+	padding-bottom:10px;
+}
+.comNo{
+	text-align:center;
+	color:#333;
+	margin:30px 0;
+	width:560px;
+}
+.comDate{
+	color:#999;
+	font-size:11px;
+}
+.comCom{
+	border:1px solid #c7c7c7;
+	padding:3px 5px 5px 5px;
+	margin:3px 15px 3px 15px;
+	border-radius:3px;
+	background-color:white;
+	font-size:11px;
+	overflow-x:hidden;
+}
+.comLogin{
+	margin:3px;
+}
+.comLogin span{
+	color:#777;
+	font-size:10px;
+}
+.comText{
+	margin:3px;
+}
+.comLogin a{
+	color:#3d71ab;
+	font-weight:bold;
+	text-decoration:none;
+}
+.comLogin a:hover{
+	color:#538ac8;
+	text-decoration:underline;
+}
+.comName, .small{
+	color:#999;
+	font-size:11px;
+}
+.comOnline{
+	text-align:center;
+	font-size:11px;
+	color:#a7b4cc;
+	margin-right:10px;
+}
+.likes{
+	float:right;
+	text-align:center;
+	margin-right:-5px;
+	margin-bottom:-5px;
+	padding:2px 10px;
+}
+.like{
+	float:right;
+	text-align:center;
+	margin-right:-5px;
+	margin-bottom:-5px;
+	padding:2px 7px 2px 3px;
+	border-radius:3px;
+}
+.like2:hover{
+	background-color: #dfdff7;
+}
+.comDelete{
+	float:right;
+	margin-right:5px;
+}
+#countCom{
+	font-weight: normal;
+}
+#count{
+	border:1px solid #3c708e;
+	border-radius:3px;
+	background-color: #fff;
+	color:#3c708e;
+	padding:2px;
+	font-weight: bold;
+}
+.u_load{ /*картинка загрузки в комментах*/
+	margin:50px;
+	height:500px;
+	background-image:url('../images/progress.gif');
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+#copy{
+	width:99%;
+}
+.online{
+	text-shadow:1px 1px 1px #2f607c, 0 0 0 #c64444;
+	color:#d6e6ef;
+	font-size:11px;
+}
+.m_top{
+	font-size:14px;
+}
+.m_top_right{
+	text-align:right;
+	padding:9px;
+}
+#div_big_bottom{
+	text-align:center;
+}
+.big_bottom{
+	width:200px;
+	padding:5px 10px;
+	margin:4px;
+}
+.white_main1{
+	width:840px;
+	min-height:100%;
+	margin:auto;
+}
+.white_main2{
+	position:fixed;
+	left: 50%;
+	margin-left:-420px;
+	width:840px;
+}
+/*Фотоальбомы*/
+#mini_alboms{
+	margin-left:10px;
+	width:200px;
+}
+.mini_albom{
+	float:left;
+	width:31%;
+	margin-left:3px;
+	text-align:center;
+	background-color:white;
+	cursor:pointer;
+	height:60px;
+}
+.mini_albom:hover{
+	background-color:#cbe6f6;
+}
+.mini_img_photo{
+	max-height:60px;	
+	max-width:60px;	
+}
+/*Оформление вверху где ава и несколько фоток*/
+.top_pictures{
+	height:250px;
+	width:575px;
+	background-repeat:no-repeat;
+	background-position:top;
+	position:relative;
+}
+.pictures_left,.pictures_right{
+	float:left;	
+}
+.pictures_left{
+	width:220px;
+	height:220px;
+}
+.fon_ava{
+	height:210px;
+	margin:5px;
+	width:210px;
+	background-repeat:no-repeat;
+	background-position:center bottom;
+}
+#ava{
+	cursor:pointer;
+	position:relative;
+}
+#ava img{
+	position:absolute;
+	bottom:0;
+	border:1px solid black;
+}
+
+
+.pictures_right_top{
+	font-size:25px;
+	color:#fff;
+	padding: 40px 0;
+	text-align:center;
+	text-shadow: 0px 2px 5px black, 0 0 15px #000;
+	width:350px;
+	height:50px;
+}
+.pictures_right_bottom{
+	margin-top:0px;
+	height:80px;
+}
+.mini_albom_new{
+	width:25%;
+	float:left;
+	text-align:center;
+	cursor:pointer;
+	height:80px;
+}
+
+.mini_img_photo_new{
+	max-width:85px;
+	max-height:80px;
+}
+#butt_viev{
+	float:left;
+	width:300px;
+	margin-top:3px;
+	margin-left:170px;
+}
+/*Статус*/
+#statustext{
+	float:left;
+	width:460px;
+	overflow-x:hidden;
+	margin-top:5px;
+	color:#2b646e;
+	text-shadow:1px 1px 1px #fff, 0 0 0 #fff;
+}
+#statusimg{
+	float:left;
+	width:50px;
+	text-align:center;
+}
+.status{
+	padding:10px;
+	font-size:11px;
+	border:1px solid #98bbcf;
+	float:left;
+	margin: 20px 20px 5px 20px;
+	background-color:#eaf3f5;
+	border-radius:5px;
+}
+#status_v{
+	background-image:url('../images/v.png');
+	width:12px;
+	height:8px;
+	position:absolute;
+	margin-top:-18px;
+	margin-left:70px;
+}
+/* Информация */
+#information{
+	text-align:center;
+	cursor:pointer;
+	padding:10px 0;
+	background-color:#e6f1f3;
+	color:#2b646e;
+	text-shadow:1px 1px 1px #fff, 0 0 0 #fff;
+	float:left;
+	width:575px;
+	border-top:1px solid #9ec4d4;
+	border-bottom:1px solid #9ec4d4;
+	margin:10px 0 0 0;
+}
+#information:hover{
+	background-color:#c5dbe7;
+}
+#hidden_information{
+	display:none;
+	clear:left;
+}
+#hidden_information p{
+	padding:10px 5px 0 10px;
+	margin:15px 0 0 50px;
+	font-weight:bold;
+}
+#hidden_information .cat{
+	border-bottom:1px dotted #ccc;
+	float:left;
+	width:65%;
+	margin:0 0 3px 80px;
+}
+#hidden_information .inf_left{
+	font-size:11px;
+}
+#hidden_information .inf_right{
+	float:right;
+	font-size:11px;
+	text-align:right;
+}
+#information_niz{
+	background-color:#e6f1f3;
+	border-bottom:1px solid #9ec4d4;
+	height:10px;
+	clear:left;
+	margin-top:10px;
+}
+.block_information{
+	float:left;
+	margin:5px 0 5px 20px;
+	border:1px dotted #548eaf;
+	border-radius:3px;
+	font-size:11px;
+	padding:5px;	
+	width:520px;
+}
+.inf_left{
+	float:left;
+	width:210px;
+	padding: 3px 0;
+	color:#808080;
+}
+.inf_right{
+	text-align:left;
+	float:left;
+	min-width:120px;
+	padding: 3px 0;
+}
+.block_information .cat{
+	border-bottom:1px dotted #ccc;
+	float:left;
+	/*width:65%;
+	margin:0 0 3px 80px;*/
+}
+/*Меню*/
+#navi_all{
+	cursor:pointer;
+	background-color:#e6f1f3;
+	color:#2b646e;
+	text-shadow:1px 1px 1px #fff, 0 0 0 #fff;
+	width:575px;
+	border-top:1px solid #9ec4d4;
+	border-bottom:1px solid #9ec4d4;
+	margin-top:-1px;
+	float:left;
+}
+.navi{
+	padding:8px 7px;
+	float:left;
+	border-right:1px solid #9ec4d4;
+}
+.navi:hover{
+	background-color:#c5dbe7;
+}
+.n_hover{
+	padding:8px 7px;
+	float:left;
+	border-right:1px solid #9ec4d4;
+	background-color:#fff8e4;
+	border-bottom:1px solid #fff8e4;
+	margin-bottom:-1px;
+	
+}
+.count{
+	font-size:10px;
+	background-color:#c5dbe7;
+	padding:3px;
+	border-radius:3px;
+}
+#all_comments{
+	float:left;
+	width:575px;
+	padding-bottom:20px;
+}
+#h_nav1{
+	display:none;
+}
+
+/*Фотоальбомы*/
+.albom_div_all{
+	float:left;
+	width:175px;
+	height:175px;
+	margin:8px;
+	text-align:center;
+	font-size:11px;
+	background-color:#eee;
+}
+.albom_img{
+	max-height:175px;
+	max-width:175px;
+}
+.min{
+}
+.border_albom_photo{
+	height:100px;
+	cursor:pointer;
+	margin-bottom:5px;
+}
+.title_albom_block{
+	background-image: url('../images/lightbox50.png');
+	cursor:pointer;
+	color:white;
+	padding:1px;
+	width:173px;
+	margin-top:42px;
+	position:absolute;
+	z-index:3;
+}
+.title_albom_block:hover{
+	background-color:#363636;
+}
+.countPhoto{
+	font-size:9px;
+}
+
+.edit_alb_a{
+	font-size:11px;
+	margin:5px;
+	float:right;
+	text-align:right;
+}
+.edit_alb_a_left{
+	font-size:11px;
+	margin:5px;
+	float:left;
+	text-align:right;
+	text-decoration:underline;
+	cursor:pointer;
+}
+/*Внутри фотоальбома*/
+.photo_div_all{
+	float:left;
+	width:130px;
+	height:130px;
+	border:1px solid #5f5f5f;
+	margin:5px 0 5px 10px;
+	text-align:center;
+	font-size:11px;
+	padding-bottom:0;
+	cursor:pointer;
+}
+.photo_div_all:hover{
+	background-color:#edf9ff;
+}
+.val{
+	line-height: 210px;
+	vertical-align: middle;
+}
+.photo_img{
+	max-height:130px;
+	max-width:130px;
+}
+
+.mini_img_photo_ph{
+	max-width:130px;
+	max-height:130px;
+}
+.mini_albom_ph{
+	width:25%;
+	float:left;
+	text-align:center;
+	cursor:pointer;
+	height:135px;
+	margin-top:5px;
+}
+.last_photo{
+	float:left;
+	width:575px;
+	padding: 5px 0;
+	margin:30px 0 10px 0;
+	background-color:#e6f1f3;
+	color:#2b646e;
+	text-shadow:1px 1px 1px #fff, 0 0 0 #fff;
+	font-weight:normal;
+}
+.free_butt{
+	margin-top:12px;
+}
+
+#free_butt{
+	width:340px;
+	text-align:right;
+	margin-top:12px;
+}
+.user_komm_photo{
+	width:60px;
+	height:65px;
+	float:left;
+	text-align:center;
+	padding:3px;
+}
+#navComm{
+	text-align:center;
+	cursor:pointer;
+}
+#prev{
+	float:left;
+	margin:0;
+}
+#next{
+	float:right;
+	margin:0;
+}
+
+#next, #prev{
+	margin:-5px 0 0 0;
+}
+#new_mes{
+	display:none;
+	border:1px solid #384772;
+	width:500px;
+	height:300px;
+	background:#7187c5;
+	border-radius:3px;
+	position:fixed;
+	top:20%;
+	z-index:11;
+	left:35%;
+}
+#new_mes textarea{
+	margin:20px;
+	width:450px;
+	height:160px;
+	border:1px solid #384772;
+	padding:10px;
+	font-family:verdana;
+}
+#new_mes h4{
+	background:#24335d;
+	text-align:center;
+	color:#fff;
+	margin:0;
+	padding:8px;
+}
+#close_mes{
+	float:right;
+	cursor:pointer;
+	padding:1px 3px;
+}
+.but_mes{
+	text-align:center;
+}
+.status_butt{
+	margin:5px;
+	padding:3px 10px;
+	background-color:#415387;
+	border-radius:3px;
+	border:1px solid #24335d;
+	color:white;
+	background-image:url(../images/new/statusbtn.png);
+	text-shadow: 1px 1px 1px black, 0 0 0 #c64444;
+}
+.status_butt:hover{
+	background-color:#425488;
+	background-image:url(../images/new/statusbtnh.png);
+	cursor:pointer;
+}

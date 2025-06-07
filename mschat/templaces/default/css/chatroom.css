@@ -1,0 +1,138 @@
+html{
+	height:100%;
+}
+body{
+	margin:0;
+	color:#000;
+	background:#fff;
+	height:100%;
+	font-family:verdana;
+	font-size:12px;
+}
+img{border-style:none;}
+a{text-decoration:underline; color:#000;}
+a:hover{text-decoration:none;}
+input,
+textarea,
+select{
+	font:14px Arial, Helvetica, sans-serif;
+	vertical-align:middle;
+	color:#000;
+}
+form,fieldset{
+	margin:0;
+	padding:0;
+	border-style:none;
+}
+/* wrapper */
+#wrapper{
+	height:100%;
+	padding:0 20px;
+	margin:0 auto;
+	background-color:#c0deed;
+	background-image:url(../images/chat.png);
+}
+#header{
+	height:10px;
+	position:absolute;
+	width:100%;
+	background:#000;
+	color:#fff;
+	left:0;
+	top:0;
+}
+#header .header-holder{padding:0;}
+.w1{
+	height:100%;
+	position:relative;
+}
+/* main-table */
+.main-table{
+	width:100%;
+	height:100%;
+	border:none;
+	border-collapse:collapse;
+	border:1px solid #000;
+	background:#ccc;
+}
+.main-table td{
+	border:none;
+	overflow:hidden;
+	vertical-align:top;
+}
+/* main-col */
+.main-col{
+	height:100%;
+	padding:47px 0 90px;
+}
+.main-col-holder{
+	overflow:hidden;
+	position:relative;
+}
+.main-col-holder .item70,
+.main-col-holder .item30{
+	position:absolute;
+	left:0;
+	width:100%;
+	background:#fff;
+	overflow:hidden;
+}
+/*%30*/
+.main-col-holder .item70 .item70-holder{padding:26px 0 0;}
+.main-col-holder .item70 .item70-holder .item70-frame{overflow:auto;}
+/*%70*/
+.main-col-holder .item30 .item30-holder{padding:26px 0 0;}
+.main-col-holder .item30 .item30-holder .item30-frame{overflow:auto;}
+
+.main-col-holder .nav-bar{
+	top:0;
+	left:0;
+	position:absolute;
+	height:24px;
+	width:100%;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	line-height:24px;
+	
+	background:#efefef;
+	/* Old browsers */
+	 background:#efefef -moz-linear-gradient(top,#efefef 0%,#dadada 100%); 
+	/* FF3.6+*/
+	 background:#efefef -webkit-gradient(linear,left top,left bottom,color-stop(0%,#efefef),color-stop(100%,#dadada)); 
+	/* Chrome,Safari4+*/
+	 background:#efefef -webkit-linear-gradient(top,#efefef 0%,#dadada 100%); 
+	/* Chrome10+,Safari5.1+*/
+	 background:#efefef -o-linear-gradient(top,#efefef 0%,#dadada 100%); 
+	/* Opera11.10+*/
+	 background:#efefef -ms-linear-gradient(top,#efefef 0%,#dadada 100%); 
+	/* IE10+*/
+	 background:#efefef linear-gradient(top,#efefef 0%,#dadada 100%); 
+	/* W3C */
+}
+/* user-col */
+.user-col{
+	width:235px;
+	padding:47px 0 90px;
+	position:relative;
+}
+/* users */
+.user-col-details{
+	width:235px;
+	height:88px;
+	position:absolute;
+	right:0;
+	bottom:0;
+	border:1px solid #000;
+	z-index:5;
+	background-color:#fff000
+}
+#sender{
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:89px;
+	border-top:1px solid #000;
+	border-left:1px solid #000;
+	background-color:#c6cbd5;
+}

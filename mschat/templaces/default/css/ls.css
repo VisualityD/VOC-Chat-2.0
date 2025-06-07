@@ -1,0 +1,191 @@
+#m_left{
+	position:absolute;
+}
+#m_right{
+	position:fixed;
+	height:100%;
+}
+.user{
+	border-bottom:1px solid #9ac3db;
+	float:left;
+	width:100%;
+	cursor:pointer;
+	background:#fbfbfb;
+}
+.user:hover{
+	background:#d9e9e9;
+}
+.user img{
+	float:left;
+	width:50px;
+	margin:5px;
+}
+.user p{
+	float:right;
+
+}
+.user strong{
+	font-weight:normal; 
+	color:#548eaf;
+	margin-top:15px;
+	display:block;
+	float:left;
+	position:absolute;
+	margin-left:60px;
+}
+.user span{
+	display:block;
+	float:left;
+	font-size:9px;
+	color:#888;
+	width:140px;
+}
+.user .no_count,.user .count{
+	right:1px;
+	padding:2px 3px;
+	margin:2px 5px;
+	margin-top:15px;
+}
+.user .count{
+	background-color:#548eaf;
+	border-radius:3px;
+	font-size:10px;
+	color:#fff;
+}
+.user .no_count{
+	width:5px;
+	height:10px;
+}
+.no_users{
+	padding:15px;
+	text-align:center;
+	font-size:11px;
+	color:#888;
+}
+
+.ls_top{
+	height:60px;
+	border-bottom:1px solid #548eaf;
+	background:#ddd;
+}
+
+.ls_bottom{
+	width:100%;
+	border-top:1px solid #548eaf;
+	position:fixed;
+	bottom:0;
+	height:115px;
+	width:575px;
+	background-image:linear-gradient(#d7dbe3,#b8bdc7);
+	background:-webkit-linear-gradient(top,#d7dbe3,#b8bdc7);
+}
+#chat{
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#editor{
+	height:50px;
+	border:1px solid #888e99;
+	float:left;
+	width:540px;
+	background:#fff;
+	border-radius:5px;
+	margin-top:10px;
+	margin-left:10px;
+	padding:4px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-image: url('../images/ten.png');	
+	background-repeat: repeat-x;
+	background-position: top;
+}
+#butt{
+	float:right;
+	margin:5px 15px;
+}
+/*mess*/
+.mes_right,.mes_left{
+
+	margin:15px 3px;
+	padding:25px 3px;
+}
+.mes_right img,.mes_left img{
+	border:1px solid black;
+	margin:3px;
+	max-width:300px;
+}
+.qr,.ql{
+	position:absolute;
+	margin-top:8px;
+	width:11px;
+	height:12px;
+}
+.mes_right div, .mes_left div{
+	padding:8px;
+	position:relative;	
+	margin:5px;
+	border-radius:6px;
+}
+.mes_right > span,.mes_left > span{
+	position:relative;	
+	font-size:10px;
+	margin:5px 3px;
+	width:100%;
+}
+
+/*right mess*/
+.mes_right div{
+	float:right;	
+	border:1px solid #bde1fb;
+	background-color: #dff2ff;
+	background-image:linear-gradient(#eaf5fe,#cce6f9);
+	background:-webkit-linear-gradient(top,#eaf5fe,#cce6f9);
+}
+.qr{	
+	right:16px;
+	background:#cce6f9 url(../images/mess/q.png);
+	background-position:0 0;
+	
+}
+.mes_right > span{
+	float:right;
+	color:#888;
+	text-align:right;
+}
+/*view mess right*/
+.view .qr{
+	background:#f0f0f0 url(../images/mess/q.png);
+	background-position:0 36px;
+}
+
+/*left mess*/
+.mes_left div{
+	float:left;
+	border:1px solid #f9a631;
+	background-color: #dff2ff;
+	background-image:linear-gradient(#ffe8c7,#ffd18f);
+	background:-webkit-linear-gradient(top,#ffe8c7,#ffd18f);
+}
+.ql{
+	left:16px;
+	background:#ffd18f url(../images/mess/q.png);
+	background-position:0 24px;
+	
+}
+.mes_left > span{
+	float:left;
+	color:#888;
+	text-align:left;
+}
+/*view mess right*/
+.view .ql{
+	background:#f0f0f0 url(../images/mess/q.png);
+	background-position:0 12px;
+}
+/*all view mess*/
+.view div{
+	border:1px solid #ccc;
+	background-color: #f0f0f0;
+	background-image:linear-gradient(#fff,#f0f0f0);
+	background:-webkit-linear-gradient(top,#fff,#f0f0f0);
+}
